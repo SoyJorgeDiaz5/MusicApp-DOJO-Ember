@@ -1,0 +1,15 @@
+<div class="jumbo">
+  <div class="right tomster"></div>
+  <h2>¡Bienvenido!</h2>
+  <p>
+    Esperamos que encuentres lo que estas buscando.
+    <br>Navega en nuestra excelente lista de canciones
+  </p>
+  {{#link-to 'about' class="button"}}
+    Sobre Nosotros
+  {{/link-to}}
+</div>
+{{#each model as |song|}}
+  {{songs-listing song = song}}
+{{/each}}
+{{outlet}}

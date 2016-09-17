@@ -1,0 +1,10 @@
+<article class="listing">
+  <img src="{{song.image}}" alt="">
+  <h3>{{#link-to "travels.show" song}}{{song.name}}{{/link-to}}</h3>
+  <div class="detail clasification">
+    <span>Clasificación:</span> {{songs-clasification song.clasification}} - {{song.clasification}}
+  </div>
+  <div class="detail category">
+    <span>Categoría:</span> {{song.category}}
+  </div>
+</article>
